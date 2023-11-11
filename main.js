@@ -7,7 +7,7 @@ document.getElementById("goButton").addEventListener("click", function () {
 
     var redirectionURLs = {
         "A": "https://joewhoop.github.io/qrkodyy/",
-        "D": "https://web.miniextensions.com/c9PrY0xXNNhsDJQQeLCL?preffill_Mechanic=" + selectedMechanic + "&prefill_Station=" + selectedStation,
+        "D": "https://web.miniextensions.com/c9PrY0xXNNhsDJQQeLCL?prefill_Mechanic=" + selectedMechanic + "&prefill_Station=" + selectedStation,
     };
 
     if (redirectionURLs[selectedStation]) {

@@ -1,17 +1,13 @@
 document.getElementById("goButton").addEventListener("click", function () {
-    var selectedMechanic = document.getElementById("mechanicDropdown").value;
-    var selectedStation = document.getElementById("stationDropdown").value;
-
-    selectedMechanic = selectedMechanic.toUpperCase().replace(" ", "_");
-    selectedStation = selectedStation.toUpperCase().replace(" ", "_");
+    var selectedLine = document.getElementById("Linia").value;
 
     var redirectionURLs = {
         "A": "https://joewhoop.github.io/qrkodyy/",
-        "D": "https://web.miniextensions.com/c9PrY0xXNNhsDJQQeLCL?prefill_Mechanic=" + selectedMechanic + "&prefill_Station=" + selectedStation,
+        "D": "https://joewhoop.github.io/qrkodyy/", // Replace with the desired URL for D
     };
 
-    if (redirectionURLs[selectedStation]) {
-        window.location.href = redirectionURLs[selectedStation];
+    if (redirectionURLs[selectedLine]) {
+        window.location.href = redirectionURLs[selectedLine];
     } else {
         alert("Wybierz linie.");
     }
